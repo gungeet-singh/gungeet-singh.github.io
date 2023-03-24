@@ -1,0 +1,104 @@
+body main #skills .skill-line {
+  border: 1px solid #000;
+}
+
+body main #skills .skill-line div {
+  background: #000;
+}
+.dark main #skills .skill-line {
+  border: 1px solid #fff;
+}
+
+.dark main #skills .skill-line div {
+  background: #fff;
+}
+main #skills .skill-blocks-all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #skills .skill-block {
+  margin-top: 0rem;
+  padding: 1rem;
+}
+
+main #skills .skill-block .skill-block-heading {
+  font-size: 1.3rem;
+}
+
+main #skills .skill-block .skill-line {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+main #skills .skill-block .skill-line div {
+  padding: 0.2rem;
+}
+
+main #skills .skill-block .skill-line #skill-line-matlab {
+  width: 80%;
+}
+
+main #skills .skill-block .skill-line #skill-line-solidworks {
+  width: 80%;
+}
+
+main #skills .skill-block .skill-line #skill-line-ansys {
+  width: 40%;
+}
+
+main #skills .skill-block .skill-line #skill-line-html {
+  width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-css {
+  width: 70%;
+}
+
+
+main #skills .skill-block .skill-line #skill-line-bootstrap {
+  width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-javascript {
+  width: 60%;
+}
+
+main #skills .skill-block .skill-line #skill-line-elementor {
+  width: 80%;
+}
+
+main #skills .skill-block .skill-line #skill-line-python {
+  width: 40%;
+}
+
+main #skills .skill-block .skill-line #skill-line-cpp {
+  width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-fea {
+  width: 40%;
+}
+
+main #skills .skill-block .skill-line #skill-line-cfd {
+  width: 65%;
+}
+
+main #skills .skill-block .skill-line #skill-line-android {
+  width: 75%;
+}
+
+main #skills .skill-block .skill-line #skill-line-java {
+  width: 70%;
+}

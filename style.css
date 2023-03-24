@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+section{
+  overflow: visible;
+  padding-top: 1.25rem;
+}
+
+#typeform div{
+  overflow: hidden !important;
+}
+ #typeform .block{
+   padding:0;
+   margin:0;
+ }
+
+img.launching-soon{
+  background-color: #f5f5f5 !important;
+  object-fit: none;
+}
+
+/*tooltip profile image*/
+main #about, #about .heading, p ,.tooltip, .tooltiptext, .block{
+  overflow: visible;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #ff5e00;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  height: 120px;
+  background-image: url('images/me.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #fff;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ff5e00;
+  padding: 5px 0;
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 60px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+    #triangle-bottomleft::after {
+      content: "";
+      transform: rotateZ(-6deg);
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      margin-left: -36px;
+      margin-bottom: -5px;
+      border-style: solid;
+      border-top: 0px !important;
+      border-right: 0px !important;
+      border-bottom: 16px solid #ff5e00;
+      border-left: 36px solid transparent;
+    }
+/*tooltip profile image ends*/
+
+.dark .tooltip {
+    border-bottom: 1px dotted #7474e9;
+}
+.dark .tooltip .tooltiptext {
+  border-color: #7474e9;
+}
+
+.dark   #triangle-bottomleft::after {
+
+    border-bottom: 16px solid #7474e9;
+    border-left: 36px solid transparent;
+  }
+
+
+body a {
+  color: #000;
+}
+
+body #contact-left #contact-line {
+  background: #000;
+}
+
+
+
+body main #edu .edu-block {
+  border-left: 0.3rem solid #000;
+}
+
+body main #project .project-block {
+  border: 2px solid #000;
+}
+
+body main #project .project-block .project-block-cont {
+  color: #000;
+}
+
+body main #contact input, body main #contact textarea {
+  border: 1px solid #000;
+}
+
+body main #contact button {
+  color: #000;
+  border: 1px solid #000;
+  background: none;
+}
+
+body main #contact button:hover {
+  background: #000;
+  color: #fff;
+}
+/* FOOTER CV */
+
+footer {
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+body footer {
+    width: 100%;
+    position: absolute;
+  	display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  	background: #000;
+    color: #fff;
+    overflow: hidden;
+    border-style: solid;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #fff;
+}
+
+.dark .cv_button{
+  background-color: #7474e9 !important;
+}
+footer a {
+  color:#fff;
+  text-decoration: none;
+}
+
+.cv_button {
+  background: #ff5e00cc !important;
+}
+
+.cv_button::after {
+  border: 2px solid #ce2727 !important;
+}
+
+span.tf-v1-popover-tooltip-close{
+  overflow: visible;
+}
+.dark div.tf-v1-popover-button-icon {
+background-color: #7474e9;
+}
+
+.tf-v1-popover{
+  margin-bottom:48px;
+}
+
+.tf-v1-popover .tf-v1-popover-button,.tf-v1-popover-tooltip{
+  margin-bottom: 48px;
+}
+.tf-v1-popover-button{
+  overflow: visible;
+}
+.credits{
+  font-size: 10px;
+  margin-right: auto;
+}
+ .tooltip_credits {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+/* Tooltip text */
+.tooltip_credits_text {
+  visibility: hidden;
+  width: 120px;
+  background-color:#000;
+  color: #fff;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ff5e00;
+  padding: 5px 0;
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  left: 105%;
+  margin-left: 10px;
+}
+
+.dark .tooltip_credits_text{
+  border-color: #7474e9;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip_credits:hover .tooltip_credits_text {
+  visibility: visible;
+}
+
+/*footer animation*/
+.purple{
+  background: #7474e9 !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button.footer_cv {
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	background: #000;
+	margin: 1px 20px;
+	border: none;
+	border-radius: 30px;
+	box-shadow: -2px -2px 10px #444, 2px 2px 10px #222, inset 2px 2px 6px #444, inset -2px -2px 6px #222;
+	color: #fff;
+	font-size: 16px;
+  overflow: hidden;
+}
+
+button.footer_cv:hover {
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+	font-size: 15px;
+	transition: 500ms;
+}
+
+button.footer_cv:focus {
+	outline: none;
+}
+
+.cv_button:hover {
+	color: #f07171;
+	text-shadow: 0px 0px 10px #f07171;
+}
+
+/*footer animation end*/
+/*FOOTER CV END */
+
+.light .day-night-text{
+  color: #ff5e00;
+}
+
+.dark {
+  background: #000;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.dark button {
+  color: #fff;
+}
+
+
+.dark #contact-left #contact-line {
+  background: #fff;
+}
+
+.dark main {
+  color: #fff;
+}
+
+
+
+.dark main #edu .edu-block {
+  border-left: 0.3rem solid #fff;
+}
+
+.dark main #project .project-block {
+  border: 2px solid #fff;
+}
+
+.dark main #project .project-block .project-block-cont {
+  color: #fff;
+}
+
+.dark main #contact input, .dark main #contact textarea {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.dark main #contact button {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.dark main #contact button:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+.dark .cursor{
+    background: #000;
+}
+.dark .cursor::after {
+  border: 2px solid #000;
+}
+
+.cursor {
+  overflow-x: visible;
+  background: #fff;
+  padding: 1.5rem;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition-duration: 10ms;
+          transition-duration: 10ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation: cursorAnimation .5s infinite alternate;
+          animation: cursorAnimation .5s infinite alternate;
+}
+
+
+.red {
+  background: #b82424be !important;
+}
+
+.red::after {
+  border: 2px solid #ce2727 !important;
+}
+
+.cursor::after {
+  content: "";
+  padding: 2rem;
+  border: 2px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  opacity: .5;
+  top: -10px;
+  left: -10px;
+  -webkit-animation: cursorAnimation2 .5s infinite alternate;
+          animation: cursorAnimation2 .5s infinite alternate;
+}
+
+#container {
+  padding: 1rem;
+}
+
+
+
+#contact-left {
+  position: fixed;
+  padding: 1rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+#contact-left #contact-left-links {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-left #contact-line {
+  height: 30vh;
+  padding: 1px;
+  display: inline-block;
+}
+
+#contact-left a {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+main {
+  position: flex;
+  padding: 1rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+main .block {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+main .block .heading {
+  font-family: 'Raleway', monospace;
+  font-size: 3rem;
+  width: 35%;
+}
+
+main .block p {
+  padding: 1rem;
+}
+
+main #about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+}
+
+main #about #heading--main {
+  font-size: 5rem;
+}
+
+
+body main .work .work-line div {
+    background: #000;
+}
+
+
+ .dark main .work .work-line div {
+    background: #fff;
+}
+
+main .work .work-block .work-block-heading {
+  font-size: 1.3rem;
+}
+
+main .work .work-block .work-line {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem;
+}
+
+main .work .work-block .work-line div {
+  padding: 0.2rem;
+}
+main .work .work-block .work-line #work-line-deloitte {
+  width: 80%;
+}
+
+
+main #edu .edu-block-main {
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-left: 6rem;
+}
+
+main #edu .edu-block-main .edu-block-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #edu .edu-block-main .edu-block-sub .edu-block {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+main #edu .edu-block-main .edu-block-sub .edu-block .edu-block-heading {
+  font-size: 1.6rem;
+}
+
+
+
+main #contact #contact-block {
+  padding: 0.5rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+main #contact #contact-block .contact-input {
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+
+
+.animaaation {
+  -webkit-animation-name: wipe-enter;
+          animation-name: wipe-enter;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes wipe-enter {
+  0% {
+    width: 0;
+    -webkit-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+  }
+  50% {
+    width: 50%;
+  }
+}
+
+@keyframes wipe-enter {
+  0% {
+    width: 0;
+    -webkit-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+  }
+  50% {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes cursorAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@keyframes cursorAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@-webkit-keyframes cursorAnimation2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnimation2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
+#contact-links {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  main {
+    width: 100%;
+  }
+  main #about #heading--main {
+    font-size: 4rem;
+  }
+  main .block .heading {
+    width: 100%  !important;
+    font-size: 2.2rem;
+  }
+  main .block {
+    padding: 1rem 0rem 1rem 1rem;
+
+  }
+  main #skills .skill-blocks-all {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main #skills .skill-block .skill-block-heading {
+    font-size: 1rem;
+  }
+  main #skills .skill-block .skill-line {
+    padding: 0.4rem;
+  }
+  main #edu .edu-block-main {
+    padding-left: 1rem;
+  }
+  main #edu .edu-block-main .edu-block-sub .edu-block .edu-block-heading {
+    font-size: 1.3rem;
+  }
+
+  main #contact #contact-block {
+    margin-left: 1rem;
+    text-align: unset;
+  }
+  main #contact #contact-block .contact-input {
+    display: block;
+  }
+  main #contact #contact-block input, main #contact #contact-block textarea {
+    width: 100%;
+    padding: 0.6rem;
+  }
+  main #contact #contact-block button {
+    padding: 0.4rem 1rem;
+  }
+  #contact-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1rem;
+    padding-bottom: none;
+  }
+  #contact-left {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  main .block .heading {
+    width: 70%;
+  }
+}

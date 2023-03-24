@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <path d="M50,100c0-20.4,17.85-37.25,40-37.25s40,16.85,40,37.25" fill="none" stroke="black" stroke-width="5"/>
+  <circle cx="100" cy="100" r="50" fill="#ffc107" />
+  <path d="M70,70l30,30l30,-30" fill="none" stroke="black" stroke-width="5"/>
+  <path d="M100,100l-20,-20" fill="none" stroke="black" stroke-width="5"/>
+  <circle cx="100" cy="100" r="25" fill="white"/>
+  <path d="M100,100l-30,-50a10,10 0 1,1 60,0z" fill="#ffc107" id="bulb-ray" />
+  <path d="M100,100l-30,50a10,10 0 1,1 60,0z" fill="#ffc107" id="bulb-ray" />
+  <path d="M100,100l30,-50a10,10 0 1,1 -60,0z" fill="#ffc107" id="bulb-ray" />
+  <path d="M100,100l30,50a10,10 0 1,1 -60,0z" fill="#ffc107" id="bulb-ray" />
+</svg>
