@@ -12,11 +12,8 @@ body main #skills .skill-line div {
 .dark main #skills .skill-line div {
   background: #fff;
 }
-main #skills .skill-blocks-all {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+main #skills {
+margin-top: 20rem;
 }
 
 main #skills .skill-block {

@@ -75,12 +75,34 @@ function alter()
         dayN.innerHTML='<i class="fas fa-moon"></i>';
         document.querySelector("body").classList.add("dark");
         document.querySelector("body").classList.remove("light");
-  
+
 
     }
     else
     {
         dayN.innerHTML='<i class="fas fa-sun"></i>';
+        document.querySelector("body").classList.remove("dark");
+        document.querySelector("body").classList.add("light");
+
+    }
+}
+
+let dayN2=document.querySelector("#day-night2")
+dayN2.style.fontSize = "25px";
+dayN2.addEventListener("click",alter)
+function alter()
+{
+    if(dayN2.querySelector("i").classList.contains("fa-sun"))
+    {
+        dayN2.innerHTML='<i class="fas fa-moon"></i>';
+        document.querySelector("body").classList.add("dark");
+        document.querySelector("body").classList.remove("light");
+
+
+    }
+    else
+    {
+        dayN2.innerHTML='<i class="fas fa-sun"></i>';
         document.querySelector("body").classList.remove("dark");
         document.querySelector("body").classList.add("light");
 

@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base target="_blank">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link href="style_workex.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="style_profile_image.css" rel="stylesheet" type="text/css">
   <link href="style_project.css" rel="stylesheet" type="text/css">
   <link href="style_skills.css" rel="stylesheet" type="text/css">
   <link href="nav.css" rel="stylesheet" type="text/css">
@@ -19,20 +21,40 @@
 
   <div class="cursor"></div>
   <header>
-    <nav id="main-nav">
-      <ul>
-        <li class="active" ><a href="#about" target="_self">ABOUT</a></li>
-        <li><a href="#skills" target="_self">SKILLS</a></li>
-        <li><a href="#edu" target="_self">EDUCATION</a></li>
-        <li><a href="#project" target="_self">PROJECTS</a></li>
-        <li><a href="#workex" target="_self">WORK</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" id="main-nav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-2">
+          <li class="nav-item active" ><a class="nav-link" href="#about" target="_self">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" target="_self">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#edu" target="_self">EDUCATION</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project" target="_self">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#workex" target="_self">WORK</a></li>
+          <li class="nav-item only-burger">
+            <div class="row">
+              <div class="col ms-3">
+                <a href="https://www.linkedin.com/in/gungeet-singh/" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="col ms-3">
+                <a href="mailto:gungeet.s.arora@gmail.com" class=" nav-link"><i class="fas fa-envelope"></i></a>
+              </div>
+              <div class="col ms-3">
+                <a href="https://github.com/gungeet-singh" class=" nav-link"><i class="fab fa-github"></i></a>
+              </div>
+              <div class="col ms-3">
+                <button id="day-night"><i class="fas fa-sun"></i> </button>
+              </div>
+            </div></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <div id="container">
     <div id="contact-left">
       <nav>
-        <button id="day-night">
+        <button id="day-night2">
           <i class="fas fa-sun"></i>
         </button>
       </nav>
@@ -44,364 +66,371 @@
 
       </div>
     </div>
-
-    <main>
-      <!-- Generate Name using js-->
-      <section id="about">
-        <div  class="block">
-          <div class="heading" id="heading--main"></div>
-          <p style="font-size:20px;">
-            <span style="font-size: 2rem;">👋</span> Hey I am <span class="day-night-text tooltip" style="font-weight:900;">Gungeet<span class="tooltiptext" id ="triangle-bottomleft"> </span></span>!!
-            <br>I am a recent MS graduate in Aerospace from the University of Illinois Urbana Champaign. Prior to my graduate studies,
-            I completed my BE in Mechatronics. I have nearly 3 years of professional experience in the field.
-            My background in both Aerospace and Mechatronics allows me to approach projects with a unique perspective and skill set and
-            throughout my career as a student and an engineer I have sought to achieve higher efficiency and whenever possible
-            introduce new ways of innovation at the workplace. My Passion lies in mission design, modeling and simulation along with automation, embedded systems and robotics.
-          </p>
-        </div>
-      </section>
-      <!--SKILLS---------------------------------------------->
-      <section id="skills">
-        <div class="block" data-aos="slide-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back">
-          <div class="heading" id="skill--heading">SKILLS</div>
-          <div class="skill-blocks-all">
-            <div class="skill-block"  >
-              <span class="skill-block-heading">MATLAB</span>
-              <div class="skill-line">
-                <div id="skill-line-matlab"></div>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">Solidworks</span>
-              <div class="skill-line">
-                <div id="skill-line-solidworks"></div>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">Ansys</span>
-              <div class="skill-line">
-                <div id="skill-line-ansys"></div>
-                <span>40%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">HTML</span>
-              <div class="skill-line">
-                <div id="skill-line-html"></div>
-                <span>70%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">CSS</span>
-              <div class="skill-line">
-                <div id="skill-line-css"></div>
-                <span>70%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">BOOTSTRAP</span>
-              <div class="skill-line">
-                <div id="skill-line-bootstrap"></div>
-                <span>70%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">PROTEUS</span>
-              <div class="skill-line">
-                <div id="skill-line-proteus"></div>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">Elementor</span>
-              <div class="skill-line">
-                <div id="skill-line-elementor"></div>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">Python</span>
-              <div class="skill-line">
-                <div id="skill-line-python"></div>
-                <span>40%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">C++</span>
-              <div class="skill-line">
-                <div id="skill-line-cpp"></div>
-                <span>70%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">FEA</span>
-              <div class="skill-line">
-                <div id="skill-line-fea"></div>
-                <span>40%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">Applied CFD</span>
-              <div class="skill-line">
-                <div id="skill-line-cfd"></div>
-                <span>65%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">Android</span>
-              <div class="skill-line">
-                <div id="skill-line-android"></div>
-                <span>75%</span>
-              </div>
-            </div>
-            <div class="skill-block"  >
-              <span class="skill-block-heading">Java</span>
-              <div class="skill-line">
-                <div id="skill-line-java"></div>
-                <span>70%</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!--SKILLS END---------------------------------------------->
-      <!--EDUCATION---------------------------------------------->
-      <section id="edu">
-        <div class="block" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
-          <div class="heading">EDUCATION</div>
-          <div class="edu-block-main">
-            <div class="edu-block-sub">
-              <div class="edu-block" data-aos="flip-down">
-                <span class="edu-block-heading">Masters </span>
-                <p>
-                  University Of Illinois Urbana Champaign<br>
-                  MS Aerospace : [2022]
-                </p>
-              </div>
-              <div class="edu-block" data-aos="flip-down">
-                <span class="edu-block-heading">Bachelors</span>
-                <p>
-                  Thapar Institute of Engineering and Technology<br>
-                  BE Mechatronics: [2018]
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--EDUCATION END---------------------------------------------->
-
-      <!--PROJECT---------------------------------------------->
-      <section id="project">
-        <div class="block" >
-          <div class="heading">PROJECTS</div>
-          <div id="project-all">
-            <div class="project-block project-block1" data-aos="slide-left" data-aos-easing="ease-in-out">
-              <img src="images/Armbot-1.jpg" alt="Armbot">
-              <div class="project-block-cont">
-                <span class="project-block-heading">Armbot</span>
-                <div class="project-block-links-source">
-                <p>Built a Robotic Arm, mounted on a movable base controlled wirelessly using human gestures and integrated with a troubleshooting android application.</p><br>
-                  <a class="project-block-source" href="https://drive.google.com/drive/folders/1tyV8K00W6aIINUkhIBhBMchODsDSfnTL?usp=share_link">Watch Videos...</a>
-                  <a class="project-block-source" href="https://github.com/gungeet-singh/armbot">Details Here...</a>
-                </div>
-                <div class="used-lang">
-                  <span class="label">Arduino</span>
-                  <span class="label">CAM</span>
-                  <span class="label">Solidworks</span>
-                  <span class="label">Android</span>
-                  <span class="label">3D-Print</span>
-                  <span class="label">Proteus</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-block project-block2" data-aos="slide-left" data-aos-easing="ease-in-out">
-              <img src="images/787_10_design.JPG" alt="boeing 787 10 approx design from airport drawings">
-              <div class="project-block-cont">
-                <span class="project-block-heading">Boeing 787 10 Design(Approximae from Airport Drawings)</span>
-                <div class="project-block-links-source">
-                  <a class="project-block-source">In Progress</a>
-                </div>
-                <div class="used-lang">
-                  <span class="label">Solidworks</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-block project-block3" data-aos="slide-right" data-aos-easing="ease-in-out">
-              <img src="images/artemis.jpg" alt="random-quote-generator">
-              <div class="project-block-cont">
-                <span class="project-block-heading">Optimized Mission from Earth to Mars</span>
-                <div class="project-block-links-source">
-                  <p>Use the Artemis as a gateway and identify a launch period in a 5 year period to maximize the Mars exploration time.</p><br>
-                  <a class="project-block-source" href="https://github.com/gungeet-singh/earth-2-mars">Details Here...</a>
-                </div>
-                <div class="used-lang">
-                  <span class="label">MATLAB</span>
-                  <span class="label">Python</span>
-                  <span class="label">Excel</span>
-                  <span class="label">Notepad</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-block project-block4" data-aos="slide-right" data-aos-easing="ease-in-out">
-              <img src="images/thrust.png" alt="tic-tac-toe">
-              <div class="project-block-cont">
-                <span class="project-block-heading">Optimal Thrust Control</span>
-                <div class="project-block-links-source">
-                  <p>Design a mission for a Lunar orbit change maneuver using Modified Equinoctial Elements and study what kind of rocket thrusters would work best.</p><br>
-                  <a class="project-block-source" href="https://github.com/gungeet-singh/thrust-control">Details Here...</a>
-                </div>
-                <div class="used-lang">
-                  <span class="label">MATLAB</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-block project-block5" data-aos="slide-left" data-aos-easing="ease-in-out">
-              <img src="images/heat_sink_mesh.png" alt="3-column-preview-card-component-main">
-              <div class="project-block-cont">
-                <span class="project-block-heading">FEA on Heat Sink</span>
-                <div class="project-block-links-source">
-                  <p>Perform a Finite Element Analysis on a Heat sink for Intel Alder Lake and identify the best combination of the material and fluid for maximum heat dissipation</p><br>
-                  <a class="project-block-source" href="https://github.com/gungeet-singh/fea-heat-sink">Details Here...</a>
-                </div>
-                <div class="used-lang">
-                  <span class="label">MATLAB</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-block project-block6" data-aos="slide-right" data-aos-easing="ease-in-out">
-              <img src="images/naca0012.png" alt="stats-preview-card-component-main">
-              <div class="project-block-cont">
-                <span class="project-block-heading">CFD of NACA 0012</span>
-                <div class="project-block-links-source">
-                  <p>Perform a CFD analysis on a NAACA 0012 airforil at a constant velocity in a steady, viscous and incompressible setting to validate drag and lift coefficients.</p><br>
-                  <a class="project-block-source" href="https://github.com/gungeet-singh/naca-0012">Details Here...</a>
-                </div>
-                <div class="used-lang">
-                  <span class="label">Ansys</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-block project-block7" data-aos="slide-right" data-aos-easing="ease-in-out">
-              <img src="images/cd_nozzle.png" alt="weconnected">
-              <div class="project-block-cont">
-                <span class="project-block-heading">CFD of a CD nozzle</span>
-                <div class="project-block-links-source">
-                  <p>Designed and Performed a CFD analysis on a Converging-Diverging Nozzle for various back pressure ratio values to observe the diamond wave and shocks.</p><br>
-                  <a class="project-block-source" href="https://github.com/gungeet-singh/cd-nozzle">Details Here...</a>
-                </div>
-                <div class="used-lang">
-                  <span class="label">Ansys</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!--PROJECT END---------------------------------------------->
-
-      <!-- WORK EXPERIENCE--------->
-      <section id="workex">
-        <div class="block" >
-          <div class="heading">WORK EXPERIENCE</div>
-          <div id="workex-all">
-            <section class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInLeft" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
-                  <div class="timeline-img-header" id="tata" >
-                    <h2>TATA Motors, India</h2>
-                  </div>
-                  <div class="date">Jan 2017 – June 2017</div>
-                  <p>Introduced multiple <b>Kaizens</b> at the assembly line of TCF shop and hence implement the concepts of <b>JIDOKA</b> to reduce Lead time, Automate the processes at the assembly line and reduce defects.</p>
-                  <a class="bnt-more" href="https://github.com/gungeet-singh/tata_motors">More</a>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInRight" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
-                  <div class="timeline-img-header" id="deloitte">
-                    <h2>Deloitte USI, India</h2>
-                  </div>
-                  <div class="date">Aug 2018 - Nov 2019</div>
-                  <p>Worked as a Business Technical Analyst to manually test applications, record defects and cater to client change requests. Also developed an Android Application for the cross-functional team at the Office. </p>
-                  <a class="bnt-more" href="https://github.com/gungeet-singh/deloitte-usi">More</a>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInLeft" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
-                  <div class="timeline-img-header" id="shorthills">
-                    <h2>Shorthills Tech, India</h2>
-                  </div>
-                  <div class="date">Oct 2020 - Aug 2021</div>
-                  <p>Worked as a Software Developer to create keyboard accessible webpages comaptible with screen recorders supporting multiple platforms and test the implemented various elements of the UI/UX.</p>
-                  <a class="bnt-more" href="https://github.com/gungeet-singh/shorthills-tech">More</a>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInRight" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
-                  <div class="timeline-img-header" id="parkcircle" >
-                    <h2>Parkcircle Tech, NJ, USA</h2>
-                  </div>
-                  <div class="date">Aug 2022 -  Dec 2022</div>
-                  <p>Worked as an Intern to remodel a website and migrate the Content Management System from Durpal to Wordpress. Scripted vanilla bootstrap code to design and integrate UI/UX components. </p>
-                  <a class="bnt-more" href="https://github.com/gungeet-singh/parkcircle-tech">More</a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-<!-- WORK EXPERIENCE END--------->
-<!-- CONTACT--------->
-      <section id="typeform">
-        <div class="block">
-          <div data-tf-popover="wiKkZtNt" data-tf-opacity="100" data-tf-hide-headers data-tf-iframe-props="title=Github contact" data-tf-chat data-tf-transitive-search-params data-tf-button-color="#FF5E00" data-tf-tooltip="Hey, Leave a message" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
-        </div>
-      </section>
-<!-- CONTACT END--------->
-    </main>
   </div>
-    <footer>
-      <div class="credits tooltip_credits">
-        <span>Credits</span>
-        <div class="tooltip_credits_text">
-          <span>Priya Nayak</span><br>
-          <span>Gungeet Singh</span>
+
+  <main>
+    <!-- Generate Name using js-->
+    <section id="about">
+      <div  class="block">
+        <div class="row">
+          <div class="col-12 heading" id="heading--main"></div>
+        </div>
+        <p style="font-size:20px;">
+          <span style="font-size: 2rem;">👋</span> Hey I am <span class="day-night-text tooltip_dp" style="font-weight:900;">Gungeet<span class="tooltip_dp_text" id ="triangle-bottomleft"> </span></span>!!
+          <br>I am a recent MS graduate in Aerospace from the University of Illinois Urbana Champaign. Prior to my graduate studies,
+          I completed my BE in Mechatronics. I have nearly 3 years of professional experience in the field.
+          My background in both Aerospace and Mechatronics allows me to approach projects with a unique perspective and skill set and
+          throughout my career as a student and an engineer I have sought to achieve higher efficiency and whenever possible
+          introduce new ways of innovation at the workplace. My Passion lies in mission design, modeling and simulation along with automation, embedded systems and robotics.
+        </p>
+      </div>
+    </section>
+    <!--SKILLS---------------------------------------------->
+    <section id="skills">
+      <div class="block" data-aos="slide-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back">
+        <div class="heading" id="skill--heading">SKILLS</div>
+        <div class="row skill-blocks-all">
+          <div class="col-md-6 col-12 col-sm-12 col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">MATLAB</span>
+            <div class="skill-line">
+              <div id="skill-line-matlab"></div>
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">Solidworks</span>
+            <div class="skill-line">
+              <div id="skill-line-solidworks"></div>
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">Ansys</span>
+            <div class="skill-line">
+              <div id="skill-line-ansys"></div>
+              <span>40%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">HTML</span>
+            <div class="skill-line">
+              <div id="skill-line-html"></div>
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">CSS</span>
+            <div class="skill-line">
+              <div id="skill-line-css"></div>
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">BOOTSTRAP</span>
+            <div class="skill-line">
+              <div id="skill-line-bootstrap"></div>
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">PROTEUS</span>
+            <div class="skill-line">
+              <div id="skill-line-proteus"></div>
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">Elementor</span>
+            <div class="skill-line">
+              <div id="skill-line-elementor"></div>
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">Python</span>
+            <div class="skill-line">
+              <div id="skill-line-python"></div>
+              <span>40%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">C++</span>
+            <div class="skill-line">
+              <div id="skill-line-cpp"></div>
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">FEA</span>
+            <div class="skill-line">
+              <div id="skill-line-fea"></div>
+              <span>40%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">Applied CFD</span>
+            <div class="skill-line">
+              <div id="skill-line-cfd"></div>
+              <span>65%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">Android</span>
+            <div class="skill-line">
+              <div id="skill-line-android"></div>
+              <span>75%</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 skill-block"  >
+            <span class="skill-block-heading">Java</span>
+            <div class="skill-line">
+              <div id="skill-line-java"></div>
+              <span>70%</span>
+            </div>
+          </div>
+
         </div>
       </div>
-      <span>Download CV ---></span>
-      <button class="noselect cv_button footer_cv"><a href="cv/Gungeet_Singh_Full.pdf" download="CV_Gungeet_Singh_Full">Full&ensp;<i id="fullcv" class="fas fa-file-pdf"></i></a></button>
-      <span>|</span>
-      <button class="noselect cv_button footer_cv" style="margin-right:auto;"><a href="cv/Gungeet_Singh_Core.pdf" download="CV_Gungeet_Singh_Core">Core&ensp;<i id="corecv" class="fas fa-file-pdf"></i></a></button>
-      <i class="fa-duotone fa-paintbrush-pencil"></i>
+    </section>
+    <!--SKILLS END---------------------------------------------->
+    <!--EDUCATION---------------------------------------------->
+    <section id="edu">
+      <div class="block" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
+        <div class="heading">EDUCATION</div>
+        <div class="edu-block-main">
+          <div class="edu-block-sub">
+            <div class="edu-block" data-aos="flip-down">
+              <span class="edu-block-heading">Masters </span>
+              <p>
+                University Of Illinois Urbana Champaign<br>
+                MS Aerospace : [2022]
+              </p>
+            </div>
+            <div class="edu-block" data-aos="flip-down">
+              <span class="edu-block-heading">Bachelors</span>
+              <p>
+                Thapar Institute of Engineering and Technology<br>
+                BE Mechatronics: [2018]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--EDUCATION END---------------------------------------------->
+
+    <!--PROJECT---------------------------------------------->
+    <section id="project">
+      <div class="block">
+        <div class="heading">PROJECTS</div>
+        <div id="project-all">
 
 
-    </footer>
-    <div id="contact-links">
-      <a href="https://www.linkedin.com/in/gungeet-singh/"><i class="fab fa-linkedin-in"></i></a>
-      <a href="mailto:gungeet.s.arora@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/gungeet-singh"><i class="fab fa-github"></i></a>
+              <div class="card project-card  m-1" id="project-card-armbot" data-aos="slide-right" data-aos-easing="ease-in-out">
+                <img src="images/Armbot-1.jpg" class="card-img-top" alt="Armbot">
+                <div class="card-body">
+                  <h5 class="card-title">Armbot</h5>
+                  <p class="card-text p-0">Built a Robotic Arm, mounted on a movable base controlled wirelessly using human gestures and integrated with a troubleshooting android application.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Arduino</li>
+                  <li class="list-group-item">CAM</li>
+                  <li class="list-group-item">Solidworks</li>
+                  <li class="list-group-item">Android</li>
+                  <li class="list-group-item">PROTEUS</li>
+                  <li class="list-group-item">3D-Print</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="https://drive.google.com/drive/folders/1tyV8K00W6aIINUkhIBhBMchODsDSfnTL?usp=share_link" class="card-link">Watch Videos</a>
+                  <a href="https://github.com/gungeet-singh/armbot" class="card-link">Details Here...</a>
+                </div>
+              </div>
+
+              <div class="card project-card  m-1" id="project-card-787"  data-aos="slide-left" data-aos-easing="ease-in-out">
+                <img src="images/787_10_design.JPG" class="card-img-top" alt="boeing 787 10 approx CAD design">
+                <div class="card-body">
+                  <h5 class="card-title">Boeing 787-10</h5>
+                  <p class="card-text p-0">An approximate 3D CAD Design using drawings provided for Airports by Boeing.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Solidworks</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="https://www.boeing.com/commercial/airports/3_view.page" class="card-link">Boeing Drawings</a>
+                </div>
+              </div>
+
+              <div class="card project-card  m-1" id="project-card-e2m" data-aos="slide-down" data-aos-easing="ease-in-out">
+                <img src="images/artemis.jpg" class="card-img-top" alt="Armbot">
+                <div class="card-body">
+                  <h5 class="card-title">Optimized Mission from Earth to Mars</h5>
+                  <p class="card-text p-0">Use the Artemis as a gateway and identify a launch period in a 5 year period to maximize the Mars exploration time.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">MATLAB</li>
+                  <li class="list-group-item">Python</li>
+                  <li class="list-group-item">Excel</li>
+                  <li class="list-group-item">Notepad</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="https://github.com/gungeet-singh/earth-2-mars" class="card-link">Details Here...</a>
+                </div>
+              </div>
+
+              <div class="card project-card  m-1" id="project-card-thrust"  data-aos="slide-left" data-aos-easing="ease-in-out">
+                <img src="images/thrust.png" class="card-img-top" alt="boeing 787 10 approx CAD design">
+                <div class="card-body">
+                  <h5 class="card-title">Optimal Thrust Control</h5>
+                  <p class="card-text p-0">Design a mission for a Lunar orbit change maneuver using Modified Equinoctial Elements and study what kind of rocket thrusters would work best.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">MATLAB</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="https://github.com/gungeet-singh/thrust-control" class="card-link">Details here...</a>
+                </div>
+              </div>
+
+              <div class="card project-card  m-1" id="project-card-fea" data-aos="slide-right" data-aos-easing="ease-in-out">
+                <img src="images/heat_sink_mesh.png" class="card-img-top" alt="Armbot">
+                <div class="card-body">
+                  <h5 class="card-title">FEA on Heat Sink</h5>
+                  <p class="card-text p-0">Perform a Finite Element Analysis on a Heat sink for Intel Alder Lake and identify the best combination of the material and fluid for maximum heat dissipation.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">MATLAB</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="https://github.com/gungeet-singh/fea-heat-sink" class="card-link">Details Here...</a>
+                </div>
+              </div>
+
+              <div class="card project-card  m-1" id="project-card-naca" data-aos="slide-up" data-aos-easing="ease-in-out">
+                <img src="images/naca0012.png" class="card-img-top" alt="boeing 787 10 approx CAD design">
+                <div class="card-body">
+                  <h5 class="card-title">CFD of NACA 0012</h5>
+                  <p class="card-text p-0">Perform a CFD analysis on a NAACA 0012 airforil at a constant velocity in a steady, viscous and incompressible setting to validate drag and lift coefficients.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Ansys</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="https://github.com/gungeet-singh/naca-0012" class="card-link">Details here...</a>
+                </div>
+              </div>
+
+              <div class="card project-card  m-1" id="project-card-cdN" data-aos="slide-left" data-aos-easing="ease-in-out">
+                <img src="images/cd_nozzle.png" class="card-img-top" alt="Armbot">
+                <div class="card-body">
+                  <h5 class="card-title">CFD of a CD nozzle</h5>
+                  <p class="card-text p-0">Designed and Performed a CFD analysis on a Converging-Diverging Nozzle for various back pressure ratio values to observe the diamond wave and shocks.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Ansys</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="https://github.com/gungeet-singh/cd-nozzle" class="card-link">Details Here...</a>
+                </div>
+              </div>
+            </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!--PROJECT END---------------------------------------------->
+
+    <!-- WORK EXPERIENCE--------->
+    <section id="workex">
+      <div class="block" >
+        <div class="heading">WORK EXPERIENCE</div>
+        <div id="workex-all">
+          <section class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
+                <div class="timeline-img-header" id="tata" >
+                  <h2>TATA Motors, India</h2>
+                </div>
+                <div class="date">Jan 2017 – June 2017</div>
+                <p>Introduced multiple <b>Kaizens</b> at the assembly line of TCF shop and hence implement the concepts of <b>JIDOKA</b> to reduce Lead time, Automate the processes at the assembly line and reduce defects.</p>
+                <a class="bnt-more" href="https://github.com/gungeet-singh/tata_motors">More</a>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
+                <div class="timeline-img-header" id="deloitte">
+                  <h2>Deloitte USI, India</h2>
+                </div>
+                <div class="date">Aug 2018 - Nov 2019</div>
+                <p>Worked as a Business Technical Analyst to manually test applications, record defects and cater to client change requests. Also developed an Android Application for the cross-functional team at the Office. </p>
+                <a class="bnt-more" href="https://github.com/gungeet-singh/deloitte-usi">More</a>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
+                <div class="timeline-img-header" id="shorthills">
+                  <h2>Shorthills Tech, India</h2>
+                </div>
+                <div class="date">Oct 2020 - Aug 2021</div>
+                <p>Worked as a Software Developer to create keyboard accessible webpages comaptible with screen recorders supporting multiple platforms and test the implemented various elements of the UI/UX.</p>
+                <a class="bnt-more" href="https://github.com/gungeet-singh/shorthills-tech">More</a>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
+                <div class="timeline-img-header" id="parkcircle" >
+                  <h2>Parkcircle Tech, NJ, USA</h2>
+                </div>
+                <div class="date">Aug 2022 -  Dec 2022</div>
+                <p>Worked as an Intern to remodel a website and migrate the Content Management System from Durpal to Wordpress. Scripted vanilla bootstrap code to design and integrate UI/UX components. </p>
+                <a class="bnt-more" href="https://github.com/gungeet-singh/parkcircle-tech">More</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- WORK EXPERIENCE END--------->
+    <!-- CONTACT--------->
+    <section id="typeform">
+      <div class="block">
+        <div data-tf-popover="wiKkZtNt" data-tf-opacity="100" data-tf-hide-headers data-tf-iframe-props="title=Github contact" data-tf-chat data-tf-transitive-search-params data-tf-button-color="#FF5E00" data-tf-tooltip="Hey, Leave a message" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+      </div>
+    </section>
+    <!-- CONTACT END--------->
+  </main>
+</div>
+<footer>
+  <div class="credits tooltip_credits">
+    <span>Credits</span>
+    <div class="tooltip_credits_text">
+      <span>Priya Nayak</span><br>
+      <span>Gungeet Singh</span>
     </div>
+  </div>
+  <span>Download CV ---></span>
+  <button class="noselect cv_button footer_cv"><a href="cv/Gungeet_Singh_Full.pdf" download="CV_Gungeet_Singh_Full">Full&ensp;<i id="fullcv" class="fas fa-file-pdf"></i></a></button>
+  <span>|</span>
+  <button class="noselect cv_button footer_cv" style="margin-right:auto;"><a href="cv/Gungeet_Singh_Core.pdf" download="CV_Gungeet_Singh_Core">Core&ensp;<i id="corecv" class="fas fa-file-pdf"></i></a></button>
+  <i class="fa-duotone fa-paintbrush-pencil"></i>
 
-    <script src="script.js"></script>
-    <script src="nav.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
-  </body>
-  </html>
+
+</footer>
+
+
+<script src="script.js"></script>
+<script src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>

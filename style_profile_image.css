@@ -1,0 +1,68 @@
+/*tooltip profile image*/
+main #about, #about .heading, p ,.tooltip_dp, .tooltip_dp_text, .block{
+  overflow: visible;
+}
+
+.tooltip_dp {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #ff5e00;
+}
+
+/* Tooltip text */
+.tooltip_dp .tooltip_dp_text {
+  visibility: hidden;
+  width: 120px;
+  height: 120px;
+  background-image: url('images/me.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #fff;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ff5e00;
+  padding: 5px 0;
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 60px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip_dp:hover .tooltip_dp_text {
+  visibility: visible;
+}
+
+
+    #triangle-bottomleft::after {
+      content: "";
+      transform: rotateZ(-6deg);
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      margin-left: -36px;
+      margin-bottom: -5px;
+      border-style: solid;
+      border-top: 0px !important;
+      border-right: 0px !important;
+      border-bottom: 16px solid #ff5e00;
+      border-left: 36px solid transparent;
+    }
+
+    @media (max-width: 700px) {
+        /* Position the tooltip */
+      .tooltip_dp .tooltip_dp_text {
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+      left: 50%;
+      margin-left: 0px;
+    }
+    }
+/*tooltip profile image ends*/

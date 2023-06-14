@@ -31,68 +31,11 @@ img.launching-soon{
   object-fit: none;
 }
 
-/*tooltip profile image*/
-main #about, #about .heading, p ,.tooltip, .tooltiptext, .block{
-  overflow: visible;
-}
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted #ff5e00;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  height: 120px;
-  background-image: url('images/me.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  color: #fff;
-  text-align: center;
-  border-width: 3px;
-  border-style: solid;
-  border-color: #ff5e00;
-  padding: 5px 0;
-
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: 60px;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-
-    #triangle-bottomleft::after {
-      content: "";
-      transform: rotateZ(-6deg);
-      position: absolute;
-      bottom: 0%;
-      left: 0%;
-      margin-left: -36px;
-      margin-bottom: -5px;
-      border-style: solid;
-      border-top: 0px !important;
-      border-right: 0px !important;
-      border-bottom: 16px solid #ff5e00;
-      border-left: 36px solid transparent;
-    }
-/*tooltip profile image ends*/
-
-.dark .tooltip {
+.dark .tooltip_dp {
     border-bottom: 1px dotted #7474e9;
 }
-.dark .tooltip .tooltiptext {
+.dark .tooltip_dp .tooltip_dp_text {
   border-color: #7474e9;
 }
 
@@ -425,7 +368,6 @@ main {
 }
 
 main .block {
-  padding: 2rem;
   margin-bottom: 2rem;
   margin-top: 5rem;
 }
@@ -629,19 +571,12 @@ main #contact #contact-block .contact-input {
     width: 100%;
   }
   main #about #heading--main {
+    margin-top: 20rem;
     font-size: 4rem;
   }
   main .block .heading {
     width: 100%  !important;
     font-size: 2.2rem;
-  }
-  main .block {
-    padding: 1rem 0rem 1rem 1rem;
-
-  }
-  main #skills .skill-blocks-all {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
   }
   main #skills .skill-block .skill-block-heading {
     font-size: 1rem;
